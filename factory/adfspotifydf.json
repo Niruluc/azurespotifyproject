@@ -1,0 +1,9 @@
+{
+	"name": "adfspotifydf",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f0299db0-5dbf-4e48-8a8b-f8e8dfc60208",
+		"tenantId": "5717dbe3-68ba-4265-bc70-5915ee599384"
+	}
+}
