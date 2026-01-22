@@ -5,8 +5,22 @@
 		"type": "AzureBlobFS",
 		"typeProperties": {
 			"url": "https://azurespotifysa.dfs.core.windows.net/",
-			"tenant": "tenantid",
-			"servicePrincipalId": "clientid",
+			"tenant": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "myadfkv1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "tenantid"
+			},
+			"servicePrincipalId": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "myadfkv1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "clientid"
+			},
 			"servicePrincipalCredentialType": "ServicePrincipalKey",
 			"servicePrincipalCredential": {
 				"type": "AzureKeyVaultSecret",
