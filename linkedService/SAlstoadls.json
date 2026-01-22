@@ -1,0 +1,21 @@
+{
+	"name": "SAlstoadls",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://azurespotifysa.dfs.core.windows.net/",
+			"tenant": "tenantid",
+			"servicePrincipalId": "clientid",
+			"servicePrincipalCredentialType": "ServicePrincipalKey",
+			"servicePrincipalCredential": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "myadfkv1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "clientsecret"
+			}
+		}
+	}
+}
