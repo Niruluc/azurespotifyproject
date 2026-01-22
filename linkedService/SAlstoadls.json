@@ -1,8 +1,8 @@
 {
 	"name": "SAlstoadls",
 	"properties": {
-		"annotations": [],
 		"type": "AzureBlobFS",
+		"annotations": [],
 		"typeProperties": {
 			"url": "https://azurespotifysa.dfs.core.windows.net/",
 			"tenant": {
